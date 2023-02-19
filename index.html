@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME LIB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/clear_default.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/games.css" />
+    <link rel="stylesheet" href="styles/bg.css" />
+    <script src="./scripts/games.js"></script>
+  </head>
+  <body>
+    <div class="background" id="bg"></div>
+    <content>
+      <!-- <div class="bg">
+        <h1>GAME LIB</h1>
+        <desc>Библиотека игр</desc>
+      </div> -->
+      <div>
+        <featured>
+          <featured-header>Популярное</featured-header>
+          <featured-content>
+            <column>
+              <div class="game">
+                <div class="card">Battlefield V</div>
+                <img width="348" src="./images/BFV.png" />
+              </div>
+              <div class="game">
+                <div class="card">Magicka</div>
+                <img width="348" src="./images/magicka.jpg" />
+              </div>
+              <div class="game">
+                <div class="card">Unknown</div>
+                <img width="348" src="./images/unknown.png" />
+              </div>
+            </column>
+            <column>
+              <div class="game">
+                <div class="card" onmouseover="bord3()">Borderlands 3</div>
+                <img width="348" src="./images/borderlands3.jpg" />
+              </div>
+              <div class="game">
+                <div class="card">Divinity: Original Sin</div>
+                <img width="348" src="./images/divinity_o_s.jfif" />
+              </div>
+            </column>
+            <column>
+              <div class="game">
+                <div class="card">Sea Of Thieves</div>
+                <img width="348" src="./images/seaOfThieves.jpg" />
+              </div>
+              <div class="game">
+                <div class="card">Magicka 2</div>
+                <img width="348" src="./images/magicka_2.jpg" />
+              </div>
+              <div class="game">
+                <div class="card">Divinity: Original Sin 2</div>
+                <img width="348" src="./images/divinity_o_s_2.jpg" />
+              </div>
+            </column>
+          </featured-content>
+        </featured>
+      </div>
+    </content>
+    <navbar>
+      <div class="nav_link logo">GAME LIB</div>
+      <div class="nav_link store">Магазин</div>
+      <div class="nav_link library">Мои игры</div>
+      <div class="nav_link profile">Профиль</div>
+    </navbar>
+    <footer>
+      <div class="footer-text">Московский Политех</div>
+      <div class="footer-text">201-722</div>
+    </footer>
+  </body>
+</html>

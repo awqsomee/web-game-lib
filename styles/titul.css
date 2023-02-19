@@ -1,0 +1,28 @@
+body {
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #161616;
+  color: white;
+}
+div {
+  margin: 1vmin;
+}
+
+.full-name {
+  margin-top: 7vmin;
+  font-size: 5vmin;
+}
+
+.group {
+  font-weight: 300;
+}
+
+.title {
+  margin-top: 7vmin;
+  font-size: 4vmin;
+  font-weight: 700;
+}
+
+.link {
+}

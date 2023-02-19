@@ -1,0 +1,24 @@
+navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 2vmin;
+  color: #f2f2f2;
+}
+.nav_link:hover {
+  color: #fb3640;
+  cursor: pointer;
+}
+.nav_link {
+  z-index: 121300;
+}
+
+.nav_link:not(:last-child) {
+  margin-right: 5vmin;
+}
+
+.library {
+  margin-left: auto;
+}
