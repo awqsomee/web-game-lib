@@ -20,10 +20,6 @@ navbar {
   z-index: 100;
 }
 
-.nav_link:first-child {
-  margin-left: 40px;
-}
-
 .library {
   margin-left: auto;
 }
@@ -37,4 +33,8 @@ navbar {
   width: 75vw;
   margin: auto;
   padding: 0 12.5vw;
+}
+
+navbar:not(.short) .nav_link:first-child {
+  margin-left: 40px;
 }
