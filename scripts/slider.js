@@ -27,7 +27,21 @@ let slideIndex = 0
 })()
 
 const nextSlide = () => {
-  if (slideIndex >= slides.length - 1) return
+  if (slideIndex >= slides.length - 1) {
+    slides[slideIndex].animate(
+      [
+        { transform: 'translateX(0px)' },
+        { transform: 'translateX(-30px)' },
+        { transform: 'translateX(0px)' },
+      ],
+      {
+        duration: 400,
+        iterations: 1,
+        easing: 'ease',
+      }
+    )
+    return
+  }
   slides[slideIndex].style.transform = `translateX(-${viewportWidth}px)`
   dots[slideIndex].classList.remove('active')
   slideIndex++
@@ -36,7 +50,21 @@ const nextSlide = () => {
 }
 
 const previousSlide = () => {
-  if (slideIndex <= 0) return
+  if (slideIndex <= 0) {
+    slides[slideIndex].animate(
+      [
+        { transform: 'translateX(0px)' },
+        { transform: 'translateX(30px)' },
+        { transform: 'translateX(0px)' },
+      ],
+      {
+        duration: 400,
+        iterations: 1,
+        easing: 'ease',
+      }
+    )
+    return
+  }
   slides[slideIndex].style.transform = `translateX(${viewportWidth}px)`
   dots[slideIndex].classList.remove('active')
   slideIndex--
