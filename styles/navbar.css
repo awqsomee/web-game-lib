@@ -1,24 +1,39 @@
 navbar {
   position: fixed;
+  /* height: 120px; */
+  height: 10vh;
   display: flex;
   align-items: center;
-  width: 100vw;
-  box-sizing: border-box;
-  padding: 2vmin;
-  color: #f2f2f2;
+  width: 100%;
+  background: linear-gradient(180deg, #0d111d 0%, rgba(13, 17, 29, 0) 100%);
+  gap: 6vw;
+  z-index: 100;
 }
 .nav_link:hover {
   color: #fb3640;
   cursor: pointer;
 }
 .nav_link {
-  z-index: 121300;
+  color: white;
+  text-decoration: none;
+  z-index: 100;
 }
 
-.nav_link:not(:last-child) {
-  margin-right: 5vmin;
+.nav_link:first-child {
+  margin-left: 40px;
 }
 
 .library {
   margin-left: auto;
+}
+
+.logo {
+  height: 14vmin;
+  width: 14vmin;
+}
+
+.short {
+  width: 75vw;
+  margin: auto;
+  padding: 0 12.5vw;
 }

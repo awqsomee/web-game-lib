@@ -1,11 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
+  min-height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5vmin;
-  background-color: #f2f2f2;
+  background-color: #07090f;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
+  color: white;
 }
 
 h1 {
@@ -16,21 +21,89 @@ h1 {
 column {
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
 
-.background {
-  z-index: -100;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
+wrapper {
+  width: 75vw;
   height: 100vh;
-  overflow: hidden;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(1, 25, 54, 1),
-      rgba(1, 25, 54, 0.5),
-      rgba(1, 25, 54, 0.8)
-    ),
-    url('../images/ea-dice-tahirtanis-bfv-26.jpg');
+}
+
+#title {
+  position: absolute;
+  margin-top: 20vh;
+  width: 43vw;
+  height: 33vh;
+}
+
+#subtitle {
+  position: absolute;
+  font-weight: 100;
+  width: 33%;
+  right: 12.5vw;
+  margin-top: 62.5vh;
+}
+
+circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+#red {
+  z-index: -5;
+  /* width: 40vw;
+  height: 60vh; */
+  width: 753px;
+  height: 617px;
+  left: 12vw;
+  top: 35vh;
+  background: rgba(95, 15, 64, 0.76);
+  filter: blur(185.5px);
+}
+
+#blue {
+  z-index: -6;
+  /* width: 40vw;
+  height: 60vh; */
+  width: 753px;
+  height: 617px;
+  left: 45vw;
+  top: 20vh;
+  background: #011936;
+  filter: blur(276.5px);
+}
+
+#green {
+  z-index: -4;
+  /* width: 40vw;
+  height: 18vh; */
+  width: 753px;
+  height: 195px;
+  left: 50vw;
+  top: 68vh;
+  background: rgba(9, 240, 174, 0.4);
+  filter: blur(276.5px);
+}
+
+#centerer {
+  width: 100%;
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#arrow {
+  display: flex;
+  position: relative;
+  width: 30px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.image-store {
+  width: 100%;
 }

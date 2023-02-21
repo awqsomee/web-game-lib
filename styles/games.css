@@ -1,5 +1,19 @@
-.game {
-  display: flex;
-  width: 348px;
-  margin: 1vmin;
+.battlefield_v {
+  background-image: url('../images/BFV.png');
+}
+
+.magicka {
+  background-image: url('../images/magicka.jpg');
+}
+
+.magicka_2 {
+  background-image: url('../images/magicka_2.jpg');
+}
+
+.sea_of_thieves {
+  background-image: url('../images/seaOfThieves.jpg');
+}
+
+.borderlands_3 {
+  background-image: url('../images/borderlands3.jpg');
 }
