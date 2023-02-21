@@ -125,10 +125,93 @@ line {
 
 carousel {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
   width: 100vw;
   height: 66vh;
+}
+
+dots {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+  gap: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #c0c0c0;
+  border-radius: 50%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: white;
+  transition: 1s;
+}
+
+arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  height: 100%;
+  width: 80px;
+  transition: 0.5s;
+  background: rgba(13, 17, 29, 0);
+  opacity: 0;
+}
+
+.item {
+  position: absolute;
   background-size: cover;
   background-position: center;
+  transform: translateX(100vw);
+  transition: 1s;
+}
+
+.item:first-child {
+  transform: translateX(0px);
+}
+
+#prev {
+  margin-left: 40px;
+}
+
+shadow {
+  z-index: -5;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 120px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+shadow:hover {
+  opacity: 1;
+}
+
+shadow#in {
+  background: linear-gradient(270deg, rgba(13, 17, 29, 0) 0%, #07090f 100%);
+}
+
+shadow#out {
+  background: linear-gradient(90deg, rgba(13, 17, 29, 0) 0%, #07090f 100%);
+}
+
+#next {
+  margin-right: 40px;
 }
 
 requirements {
@@ -206,4 +289,10 @@ ul {
 .requirements {
   line-height: 170%;
   align-self: start;
+}
+
+img {
+  width: 100vw;
+  height: 66vh;
+  object-fit: cover;
 }

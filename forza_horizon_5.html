@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="styles/forza_horizon_5.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/content.css" />
-  </head>
+  <script src="./scripts/slider.js"></script>
+</head>
   <body>
     <open class="forza_horizon_5">
       <div class="title">
@@ -53,11 +54,18 @@
         Отправляйтесь в захватывающие дух экспедиции по яркому и постоянно меняющемуся открытому миру Мексики с безграничным весельем за рулем сотен лучших автомобилей мира.
       </p>
       <carousel>
-        <arrow></arrow>
-        <dot></dot>
-        <dot></dot>
-        <dot></dot>
-        <arrow></arrow>
+        <div class="item">
+          <img src="./images/forza5scr.png">
+        </div>
+      <dots></dots>
+      <arrow onclick="previousSlide()"><svg id="prev"  xmlns="http://www.w3.org/2000/svg" width="19" height="57"
+            viewBox="0 0 19 57" fill="none">
+            <path d="M18 1L2 28.5L18 56" stroke="white" stroke-width="2" stroke-linecap="round" />
+          </svg></arrow>
+        <arrow  onclick="nextSlide()">
+          <svg id="next" xmlns="http://www.w3.org/2000/svg" width="19" height="57" viewBox="0 0 19 57" fill="none">
+            <path d="M1 56L17 28.5L0.999999 0.999997" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg< /arrow>>
       </carousel>
       <p id="promoText">
         Исследуйте мир поразительных контрастов и красоты. Откройте для себя живые пустыни, пышные джунгли, исторические города, скрытые руины, нетронутые пляжи, обширные каньоны и возвышающийся заснеженный вулкан.
