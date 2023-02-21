@@ -5,11 +5,22 @@ navbar {
   display: flex;
   align-items: center;
   width: 100%;
-  background: linear-gradient(180deg, #0d111d 0%, rgba(13, 17, 29, 0) 100%);
   gap: 6vw;
   z-index: 100;
   transition: 0.5s;
 }
+
+navbar::before {
+  position: absolute;
+  left: -50vw;
+  display: inline-block;
+  background: linear-gradient(180deg, #0d111d 0%, rgba(13, 17, 29, 0) 100%);
+  content: '';
+  height: 10vh;
+  transition: 0s;
+  width: 200vw;
+}
+
 .nav_link:hover {
   color: #fb3640;
   cursor: pointer;
