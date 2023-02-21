@@ -8,6 +8,7 @@ navbar {
   background: linear-gradient(180deg, #0d111d 0%, rgba(13, 17, 29, 0) 100%);
   gap: 6vw;
   z-index: 100;
+  transition: 0.5s;
 }
 .nav_link:hover {
   color: #fb3640;
