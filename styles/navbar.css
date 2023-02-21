@@ -32,9 +32,16 @@ navbar {
 .short {
   width: 75vw;
   margin: auto;
+  transition: 0.5s;
   padding: 0 12.5vw;
 }
 
+navbar.short .nav_link:first-child {
+  transition: 0.5s;
+  margin-left: 0px;
+}
+
 navbar:not(.short) .nav_link:first-child {
+  transition: 0.5s;
   margin-left: 40px;
 }
