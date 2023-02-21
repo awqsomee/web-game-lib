@@ -1,43 +1,9 @@
-content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 80vw;
-}
-
-.bg {
+#shop {
+  padding-top: 10vh;
+  height: 200px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-sizing: border-box;
-  /* background-color: #011936; */
-  /* background-image: url('/images/IMG_20221120_230744_950.png'); */
-  /* background-image: url('/images/Nier-Automata-PS4-Wallpapers-18.png'),
-    linear-gradient(180deg, rgba(1, 25, 54, 0.8) 0%, #011936 33%); */
-  background-image: linear-gradient(to bottom, rgba(1, 25, 54, 0.5), rgba(1, 25, 54, 0.8)),
-    url('../images/Nier-Automata-PS4-Wallpapers-18.png');
-  box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25);
-  width: 100vw;
-  height: 50vmin;
-  color: #f2f2f2;
-}
-
-featured {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 2vmin;
-}
-
-featured-header {
-  font-size: 4vmin;
-  font-weight: 700;
-  color: #f2f2f2;
-}
-
-featured-content {
-  display: flex;
 }
 
 .game {
@@ -79,12 +45,4 @@ featured-content {
   background: linear-gradient(180deg, rgba(7, 9, 15, 0.1) 60%, rgba(7, 9, 15, 0.8) 90%);
   z-index: 15;
   color: #f2f2f2;
-}
-
-#shop {
-  padding-top: 10vh;
-  height: 200px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
