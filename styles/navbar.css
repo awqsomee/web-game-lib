@@ -21,23 +21,60 @@ navbar::before {
   width: 200vw;
 }
 
+.nav_link {
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+  z-index: 101;
+}
+
 .nav_link:hover {
   color: #fb3640;
   cursor: pointer;
-}
-.nav_link {
-  color: white;
-  text-decoration: none;
-  z-index: 100;
 }
 
 .library {
   margin-left: auto;
 }
 
-.logo {
+.logo_svg {
   height: 14vmin;
   width: 14vmin;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: auto 30px;
+  color: white;
+  z-index: 100;
+}
+
+#aboutBg {
+  padding: 30px;
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  width: 100%;
+  z-index: -100;
+}
+
+#aboutSubmenu {
+  box-sizing: border-box;
+  position: absolute;
+  display: none;
+  top: 80px;
+  left: 0;
+}
+
+#aboutSubmenu ul {
+  flex-flow: column;
+  display: flex;
+  gap: 20px;
 }
 
 .short {
@@ -52,7 +89,7 @@ navbar.short .nav_link:first-child {
   margin-left: 0px;
 }
 
-navbar:not(.short) .nav_link:first-child {
+navbar:not(.short) .logo {
   transition: 0.5s;
   margin-left: 40px;
 }

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/content.css" />
     <script src="./scripts/navbarWider.js"></script>
+    <script src="./scripts/navHover.js"></script>
     <link rel="icon" href="favicon.svg" />
     <meta property="og:title" content="CosmoSTORE" />
     <meta property="og:type" content="website" />
@@ -27,6 +28,7 @@
     />
     <meta property="og:image" content="./favicon.svg" />
   </head>
+
   <body>
     <wrapper>
       <svg
@@ -256,9 +258,9 @@
       </column>
     </div>
     <navbar class="short" id="nav">
-      <a style="display: block" class="nav_link logo" href="./index.html">
+      <a class="nav_link logo" href="./index.html">
         <svg
-          class="logo"
+          class="logo_svg"
           xmlns="http://www.w3.org/2000/svg"
           width="163"
           height="56"
@@ -271,9 +273,23 @@
           />
         </svg>
       </a>
-      <a style="display: block" class="nav_link store" href="./index.html#shop">
+      <a class="nav_link store" href="./index.html#shop">
         <div>Магазин</div>
       </a>
+      <div id="about">
+        <div id="aboutBg"></div>
+        <div class="pointer">О проекте</div>
+        <dd id="aboutSubmenu">
+          <ul>
+            <li>
+              <a class="nav_link" target="_blank" href="https://github.com/awqsomee/web-game-lib"
+                >GitHub</a
+              >
+            </li>
+            <li><a class="nav_link" target="_blank" href="https://t.me/Awhmsk">Контакты</a></li>
+          </ul>
+        </dd>
+      </div>
     </navbar>
   </body>
 </html>

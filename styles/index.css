@@ -107,3 +107,7 @@ circle {
 .image-store {
   width: 100%;
 }
+
+.pointer {
+  cursor: pointer;
+}
