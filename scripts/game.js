@@ -2,6 +2,7 @@ let slides = []
 let dots = []
 let viewportWidth = window.innerWidth
 let slideIndex = 0
+let videoIsPlaying = 1
 
 ;(function () {
   window.onload = () => {
@@ -114,4 +115,19 @@ const toSlide = (slideNum) => {
   }
   slideIndex = slideNum
   dots[slideIndex].classList.add('active')
+}
+
+const videoControl = () => {
+  const iframe = document.querySelector('iframe')
+  if (videoIsPlaying)
+    iframe.contentWindow.postMessage(
+      '{"event":"command","func":"' + 'pauseVideo' + '","args":""}',
+      '*'
+    )
+  else
+    iframe.contentWindow.postMessage(
+      '{"event":"command","func":"' + 'playVideo' + '","args":""}',
+      '*'
+    )
+  videoIsPlaying = !videoIsPlaying
 }
