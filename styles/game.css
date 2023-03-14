@@ -215,6 +215,7 @@ shadow#out {
 }
 
 requirements {
+  overflow: hidden;
   z-index: -5;
   position: relative;
   display: grid;
