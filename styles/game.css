@@ -122,6 +122,10 @@ promo {
   align-items: center;
 }
 
+promo > line {
+  opacity: 0;
+}
+
 #promoText {
   width: 55vw;
 }
@@ -309,4 +313,17 @@ img {
   width: 100vw;
   height: 66vh;
   object-fit: cover;
+}
+
+ost > audio {
+  width: 60vw;
+}
+
+ost > figcaption {
+  margin-top: 2vmin;
+  padding: 2vmin;
+}
+
+ost {
+  height: 45vh;
 }
