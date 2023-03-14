@@ -263,7 +263,6 @@ requirements {
   grid-area: min;
   display: flex;
   justify-content: center;
-  align-items: end;
   flex-direction: column;
 }
 
@@ -272,7 +271,6 @@ requirements {
   grid-area: rec;
   display: flex;
   justify-content: center;
-  align-items: end;
   flex-direction: column;
 }
 
