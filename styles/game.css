@@ -121,10 +121,6 @@ promo {
   align-items: center;
 }
 
-promo > line {
-  opacity: 0;
-}
-
 #promoText {
   width: 55vw;
 }
@@ -318,11 +314,49 @@ ost > audio {
   width: 60vw;
 }
 
-ost > figcaption {
+ost > figcaption:not(:first-child) {
   margin-top: 2vmin;
   padding: 2vmin;
 }
 
+ost > figcaption {
+  padding: 2vmin;
+}
+
 ost {
-  height: 45vh;
+  margin: 10vmin 0px;
+}
+
+languages {
+  margin-bottom: 10vmin;
+}
+
+table {
+  width: 33vw;
+}
+
+caption {
+  text-align: start;
+  font-weight: 300;
+}
+
+th {
+  padding: 1vmin;
+  font-weight: 100;
+  font-size: 2vmin;
+}
+
+tr {
+  border-bottom: #aaaaaa 1px solid;
+}
+
+td {
+  padding: 1vmin;
+  text-align: center;
+  font-weight: 100;
+  font-size: 2vmin;
+}
+
+td:first-child {
+  padding: 0;
 }
