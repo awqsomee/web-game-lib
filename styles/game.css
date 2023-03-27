@@ -324,11 +324,11 @@ ost > figcaption {
 }
 
 ost {
-  margin: 10vmin 0px;
+  margin-top: 10vmin;
 }
 
 languages {
-  margin-bottom: 10vmin;
+  margin: 10vmin 0px;
 }
 
 table {
