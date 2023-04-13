@@ -4,45 +4,10 @@ let viewportWidth = window.innerWidth
 let slideIndex = 0
 let videoIsPlaying = 1
 
-;(function () {
-  window.onload = () => {
-    navbarAboutHover()
-    slider()
-  }
-})()
+slides = document.getElementsByClassName('item')
 
-const navbarAboutHover = () => {
-  about = document.getElementById('about')
-  aboutBg = document.getElementById('aboutBg')
-  aboutSubmenu = document.getElementById('aboutSubmenu')
-  about.addEventListener(
-    'mouseenter',
-    () => {
-      aboutSubmenu.style.display = 'block'
-
-      aboutBg.style.height = about.clientHeight - 30 + aboutSubmenu.clientHeight + 'px'
-      aboutBg.style.background =
-        'linear-gradient(180deg, rgba(13, 17, 29,0.7) 0%, rgba(13, 17, 29, 0) 100%)'
-    },
-    false
-  )
-  about.addEventListener(
-    'mouseleave',
-    () => {
-      aboutBg.style.background = 'transparent'
-      aboutSubmenu.style.display = 'none'
-    },
-    false
-  )
-}
-
-const slider = () => {
-  slides = document.getElementsByClassName('item')
-
-  slides[0].style.transform = `translateX(0px)`
-  if (slides.length <= 1) {
-    return
-  }
+slides[0].style.transform = `translateX(0px)`
+if (slides.length > 1) {
   document.querySelectorAll('arrow').forEach((arrow) => (arrow.style.opacity = '1'))
   let dotSpace = document.querySelector('dots')
   for (let i = 0; i < slides.length; i++) {
