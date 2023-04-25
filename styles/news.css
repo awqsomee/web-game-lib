@@ -1,0 +1,54 @@
+stories {
+  display: flex;
+  width: 75vw;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+story {
+  max-width: calc((100% - 56px) / 3);
+  border: 1px #333333 solid;
+  height: 100%;
+}
+
+description {
+  display: block;
+  padding: 5px;
+  line-height: 120%;
+  font-size: 1ch;
+}
+
+description::first-letter {
+  font-size: 4ch;
+  font-weight: 700;
+  color: #fb3640;
+  float: left;
+  margin-top: 8px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+story img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: start;
+  width: 75vw;
+}
+
+h1 {
+  margin-top: 4ch;
+  margin-bottom: 1.5ch;
+  font-size: 3ch;
+  font-weight: 700;
+}
+
+.inline_link {
+  color: #fb3640;
+}
+
+.inline_link:hover {
+  color: white;
+}

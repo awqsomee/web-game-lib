@@ -56,6 +56,9 @@ p + ul li {
 .inline_link {
   color: #fb3640;
 }
+.inline_link:hover {
+  color: white;
+}
 
 circle {
   position: absolute;
